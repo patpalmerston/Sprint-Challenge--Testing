@@ -5,7 +5,7 @@ const server = express();
 server.use(express.json());
 
 server.get('/', async (req, res) => {
-  res.status(200).json({ message: "this is the GET" })
+  res.status(200).json({ api: "api get running" })
 })
 
 module.exports = server;
